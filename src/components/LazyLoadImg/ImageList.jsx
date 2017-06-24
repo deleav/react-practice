@@ -4,8 +4,8 @@ import React, { Component, PropTypes } from "react";
 import ImageItem from './ImageItem';
 
 export default class ImageList extends Component {
-  constructor( props ) {
-    super( props );
+  constructor() {
+    super();
     this.state = {
       viewport: {
         top: 0,
