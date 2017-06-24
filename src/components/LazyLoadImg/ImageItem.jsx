@@ -33,3 +33,10 @@ export default class ImageItem extends Component {
     )
   }
 }
+
+ImageItem.propTypes = {
+  viewport: PropTypes.shape({
+    top: PropTypes.number.isRequired, 
+    height: PropTypes.number.isRequired
+  })
+}

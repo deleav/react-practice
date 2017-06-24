@@ -16,11 +16,13 @@ export default class ImageList extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.updateViewport, false);
+    window.addEventListener('resize', this.updateViewport, false);
     this.updateViewport();
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.updateViewport);
+    window.removeEventListener('resize', this.updateViewport);
   }
 
   updateViewport = () => {
